@@ -12,13 +12,26 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            VStack(spacing: 20) {
+                NavigationLink("Go to Articles") {
+                    Text("Articles")
+                }
+                .buttonStyle(.borderedProminent)
+                
+                NavigationLink("Go to Books") {
+                    Text("Books")
+                }
+                .buttonStyle(.borderedProminent)
+                
+                NavigationLink("Go to Movies") {
+                    Text("Movies")
+                }
+                .buttonStyle(.borderedProminent)
+            }
+            .padding()
+            .navigationTitle("Main Menu")
         }
-        .padding()
     }
 }
 
