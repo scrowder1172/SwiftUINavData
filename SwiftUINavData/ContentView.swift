@@ -20,12 +20,12 @@ struct ContentView: View {
                 .buttonStyle(.borderedProminent)
                 
                 NavigationLink("Go to Books") {
-                    Text("Books")
+                    BooksView()
                 }
                 .buttonStyle(.borderedProminent)
                 
                 NavigationLink("Go to Movies") {
-                    Text("Movies")
+                    MoviesView()
                 }
                 .buttonStyle(.borderedProminent)
             }
