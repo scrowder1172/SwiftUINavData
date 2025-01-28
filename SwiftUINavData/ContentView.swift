@@ -15,7 +15,7 @@ struct ContentView: View {
         NavigationStack {
             VStack(spacing: 20) {
                 NavigationLink("Go to Articles") {
-                    Text("Articles")
+                    ArticlesView()
                 }
                 .buttonStyle(.borderedProminent)
                 
