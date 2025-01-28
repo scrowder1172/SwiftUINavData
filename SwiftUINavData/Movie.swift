@@ -10,6 +10,7 @@
 
 import SwiftData
 
+@Model
 class Movie {
     var title: String
     var releaseYear: String
